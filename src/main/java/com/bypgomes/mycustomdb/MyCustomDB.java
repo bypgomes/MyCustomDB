@@ -1,5 +1,6 @@
 package com.bypgomes.mycustomdb;
 
+import com.bypgomes.mycustomdb.block.ModBlocks;
 import com.bypgomes.mycustomdb.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +53,8 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.SIEVE);
+            event.accept(ModItems.BISMUTH);
+            event.accept(ModItems.RAW_BISMUTH);
         }
     }
 
