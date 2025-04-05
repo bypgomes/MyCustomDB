@@ -1,6 +1,7 @@
 package com.bypgomes.mycustomdb;
 
 import com.bypgomes.mycustomdb.block.ModBlocks;
+import com.bypgomes.mycustomdb.item.ModCreativeTabs;
 import com.bypgomes.mycustomdb.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,6 +37,8 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -55,6 +58,11 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        event.accept(ModBlocks.BISMUTH_BLOCK);
+        event.accept(ModBlocks.BISMUTH_ORE);
         }
     }
 

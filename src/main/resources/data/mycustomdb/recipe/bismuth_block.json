@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mycustomdb:bismuth_block"
+    }
+  ],
+  "result": {
+    "id": "mycustomdb:bismuth",
+    "count": 9
+  }
+}

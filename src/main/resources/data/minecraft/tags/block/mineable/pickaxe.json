@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+
+    "mycustomdb:bismuth_block",
+    "mycustomdb:bismuth_ore",
+    "mycustomdb:deepslate_bismuth_ore"
+
+  ]
+}

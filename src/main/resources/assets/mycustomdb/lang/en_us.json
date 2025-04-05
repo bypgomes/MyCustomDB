@@ -1,5 +1,10 @@
 {
  "comentario_dev": "Arquivo responsavel para modificar o nome do item!",
  "item.mycustomdb.bismuth": "Bismuth",
- "item.mycustomdb.raw_bismuth": "Raw Bismuth"
+ "item.mycustomdb.raw_bismuth": "Raw Bismuth",
+ "block.mycustomdb.bismuth_block": "Block of Bismuth",
+ "block.mycustomdb.bismuth_ore": "Bismuth Ore",
+ "block.mycustomdb.deepslate_bismuth_ore": "Bismuth Deepslate Ore",
+ "creativetab.mycustomdb.bismuth_items": "Bismuth Items",
+ "creativetab.mycustomdb.bismuth_blocks": "Bismuth Blocks"
 }
